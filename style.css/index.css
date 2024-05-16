@@ -1,3 +1,4 @@
+@import url('header.css');
 * {
     margin: 0;
     padding: 0;
@@ -13,12 +14,50 @@ section.secao-busca {
     display: flex;
     padding: 1rem;
     justify-content: center;
+    border: 1px solid #ccc;
+    margin: 2rem;
+}
+
+section.secao-busca div.campo--pesquisa {
+    width: 60%;
+    max-width: 800px;
+}
+
+section.secao-busca div.legenda--pesquisa {
+    width: 40%;
+    max-width: 800px;
+}
+
+section.secao-busca div.legenda--pesquisa h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+section.secao-busca div.legenda--pesquisa ul li {
+    font-size: 0.9rem;
+    margin: 0.4rem 0;
+}
+
+section.secao-busca div.legenda--pesquisa ul li span {
+    font-weight: 600;
+}
+
+section.secao-busca div.legenda--pesquisa div a {
+    color: rgb(2, 14, 73);
+    font-size: 0.9rem;
+}
+
+section.secao-busca div.legenda--pesquisa div a:hover {
+    color: rgb(11, 48, 237);
 }
 
 section.secao-busca input {
     padding: 0.5rem 0.3rem;
-    margin: 0 0.4rem;
-    font-size: 1.2rem;
+    margin: 0.6rem 0;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 600px;
+    min-width: 250px;
 }
 
 section.secao-busca button {
@@ -46,14 +85,15 @@ section.alimentos-escolhidos div.card-alimento {
 }
 
 section.alimentos-escolhidos div.card-alimento h2 {
-    border-bottom: 2px solid #ccc ;
+    border-bottom: 2px solid #ccc;
     padding-bottom: 0.2rem;
     width: 90%;
     margin: 0.5rem auto 0 auto;
     text-align: center;
 }
 
-section.alimentos-escolhidos img, section.alimentos-escolhidos div.card-alimento div {
+section.alimentos-escolhidos img,
+section.alimentos-escolhidos div.card-alimento div {
     width: 100%;
     max-width: 270px;
     min-width: 170px;
@@ -72,6 +112,22 @@ section.alimentos-escolhidos div.card-alimento p {
 
 section.alimentos-escolhidos div.card-alimento p span {
     font-weight: 600;
+}
+
+.btn {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 0.4rem;
+    background: transparent;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+
+.btn:hover {
+    background: #bbb;
 }
 
 .verde {

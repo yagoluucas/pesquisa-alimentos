@@ -1,0 +1,27 @@
+@media screen and (max-width:768px) {
+    section.secao-busca {
+        flex-direction: column;
+    }
+
+    section.secao-busca div.campo--pesquisa, section.secao-busca div.legenda--pesquisa {
+        width: 90%;
+        margin: 1.3rem 0;
+    }
+
+    section.secao-busca div.legenda--pesquisa {
+        padding: 0 1rem;
+    }
+
+    header {
+        justify-content: start;
+        padding: 2rem;
+    }
+
+    header nav ul{
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 0.7rem 0;
+    }
+}

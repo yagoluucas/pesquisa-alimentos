@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css/index.css">
+    <link rel="stylesheet" href="style.css/mobile.css">
     <title>Lista Alimentos</title>
 </head>
 <body>
 
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Pesquisar</a></li>
+                <li><a href="index.html">Instruções</a></li>
+                <li><a href="alimentos-selecionados.html">Alimentos Selecionados</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
         <section class="secao-busca">
-            <input type="text" class="nutriente" placeholder="nutriente">
-            <input type="text" class="quantidade mínima" placeholder="quantidade">
-            <button class="procurar-alimentos">Procurar Alimento</button>
+            <div class="campo--pesquisa">
+                <div>
+                    <input type="text" class="nutriente" id="nutriente" placeholder="Nutriente">
+                    <input type="number" min="1" class="quantidade-minima" id="nutrientes" placeholder="Quantidade mínima">
+                    <input type="number" min="2" class="quantidade-maxima" id="quantidade maxima" placeholder="Quantidade máxima">
+                </div>
+                <button class="procurar-alimentos">Procurar Alimento</button>
+            </div>
+            <div class="legenda--pesquisa">
+                <h2>
+                    Legenda de cada item
+                </h2>
+                <ul>
+                    <div>
+                        <li><span class="verde">Nutriente: </span>Nutriente que você quer pesquisar, como gordura, proteina, calorias...</li>
+                        <a href="nutrientes.html">Ver lista completas de nutrientes</a>
+                    </div>
+                    <li><span class="verde">Quantidade Mínima: </span>Quantidade mínima daquele nutriente, sendo que o valor padrão é 1 caso não seja digitado nada</li>
+                    <li><span class="verde">Quantidade Máxima: </span>Quantidade máxima daquele nutriente, sendo que o valor padrão é 1000 se o nutriente pesquisado for calorias e não seja digitado nada, se for um macronutriente o máximo será 100</li>
+                </ul>
+            </div>
         </section>
     </main>
     
-    <script src="script.js/script.js"></script>
+    <script type="module" src="script/script.js"></script>
 </body>
 </html>

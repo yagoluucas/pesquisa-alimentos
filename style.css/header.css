@@ -1,0 +1,29 @@
+header {
+    margin-bottom:3rem ;
+    border-bottom: 2px solid #ddd;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+header nav ul li {
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+header nav ul li a{
+    color: #228B22;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+header nav ul li a:hover{
+    border-bottom: 3px solid #228B22 ;
+    padding-bottom: 0.2rem;
+}
