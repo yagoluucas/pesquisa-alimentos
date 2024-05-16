@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/pagina-alimentos-salvos.css">
     <title>Alimentos Selecionados</title>
 </head>
 <body>
@@ -19,8 +20,28 @@
     </header>
 
     <main>
+        <h1>Lista de Alimentos salvos</h1>
         <section class="js-alimentos--salvos alimentos-escolhidos">
+        </section>
 
+        <section class="info-alimentos-salvos">
+            <h2>Informações nutricionais dos alimentos salvos</h2>
+            <div>
+                <ul>
+                    <li class="js-calorias calorias"></li>
+                    <li class="js-carboidratos carboidratos"></li>
+                    <li class="js-proteinas proteinas"></li>
+                    <li class="js-gorduras gorduras"></li>
+                </ul>
+                <div class="distribuicao--nutriente">
+                    <h2>Distribuição de cada nutriente</h2>
+                    <div class="grafico-nutrientes">
+                        <span class="js-proteinas-grafico proteina-grafico"></span>
+                        <span class="js-carboidrato-grafico carboidrato-grafico"></span>
+                        <span class="js-gordura-grafico gordura-grafico"></span>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 

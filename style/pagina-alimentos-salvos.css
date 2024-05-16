@@ -1,0 +1,59 @@
+main h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+main section.info-alimentos-salvos {
+    width: 95%;
+    margin: 2rem auto;
+    padding: 1rem 3rem;
+}
+
+
+main section.info-alimentos-salvos h2 {
+    font-size: 1.7rem;
+    margin: 2rem auto 1.3rem auto;
+}
+
+main section.info-alimentos-salvos ul li {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+main section.info-alimentos-salvos div > div.distribuicao--nutrientes {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+main section.info-alimentos-salvos div.grafico-nutrientes {
+    border: 1px solid #000;
+    max-height: 30px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+}
+
+main section.info-alimentos-salvos div.grafico-nutrientes span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+main section.info-alimentos-salvos div.grafico-nutrientes span.proteina-grafico {
+    background: #1E88E5;
+}
+
+main section.info-alimentos-salvos div.grafico-nutrientes span.carboidrato-grafico {
+    background: #FFEB3B;
+    color: #111;
+}
+
+main section.info-alimentos-salvos div.grafico-nutrientes span.gordura-grafico {
+    background: #6D4C41;
+}

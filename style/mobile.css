@@ -24,4 +24,8 @@
     header nav ul li {
         margin: 0.7rem 0;
     }
+
+    main section.info-alimentos-salvos {
+        flex-direction: column;
+    }
 }

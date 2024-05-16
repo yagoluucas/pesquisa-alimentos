@@ -26,7 +26,7 @@ export function construirDivAlimento(comida, id) {
     const paragrafoGordura = document.createElement('p')
     const paragrafoProteina = document.createElement('p')
     const paragrafoCalorias = document.createElement('p')
-    let btnAdicionarAlimento = null
+    let btnAdicionarAlimento = ''
     if (window.location.pathname == '/index.html') {
         btnAdicionarAlimento = document.createElement('button')
         btnAdicionarAlimento.addEventListener('click', () => {
@@ -34,7 +34,6 @@ export function construirDivAlimento(comida, id) {
         })
         btnAdicionarAlimento.innerHTML = 'Adicionar Alimento'
     }
-    console.log(btnAdicionarAlimento)
     const divInfoAlimnto = document.createElement('div')
     const arrayNutrientes = comida.nutrients
     const divAlimento = document.createElement('div')
